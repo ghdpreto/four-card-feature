@@ -2,9 +2,6 @@
 
 ![Design preview for the Four card feature section coding challenge](./design/desktop-preview.jpg)
 
-
-**[See it working](https://vercel.com/ghdpreto/four-card-feature)
-
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
@@ -12,6 +9,8 @@ Thanks for checking out this front-end coding challenge.
 [Frontend Mentor](https://www.frontendmentor.io) challenges allow you to improve your skills in a real-life workflow.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
+
+[See it working](https://vercel.com/ghdpreto/four-card-feature)
 
 ## The challenge
 
