@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <h1 class="l-header__title">Reliable, efficient delivery <br /></h1>
+      <h2 class="l-header__sub-title">
+        Powered by Technology
+      </h2>
 
-</head>
-<body>
+      <p class="l-header__description">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+    </header>
 
-  <header class="l-header">
-    <h1 class="l-header__title">
-      Reliable, efficient delivery <br>
-    </h1>
-    <h2 class="l-header__sub-title">
-      Powered by Technology
-    </h2>
+    <main class="l-main">
+      <section class="c-card">
+        <div class="c-card__content">
+          <h2 class="c-card__content__title">
+            Supervisor
+          </h2>
+          <p class="c-card__content__text">
+            Monitors activity to indentify project roadblocks
+          </p>
+          <img
+            class="c-card__content__img"
+            src="./images/icon-supervisor.svg"
+          />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
 
-    <p class="l-header__description">
-      Our Artificial Intelligence powered tools use millions of project data points 
-      to ensure that your project is successful
-    </p>
-
-  </header>
-
-
-  <main class="l-main">
-    <section class="c-card">
-      <div class="c-card__content">
-        <h2 class="c-card__content__title">
-          Supervisor
-        </h2>
-        <p class="c-card__content__text">
-          Monitors activity to indentify project roadblocks
-        </p>
-        <img class="c-card__content__img" src="./images/icon-supervisor.svg">
-      </div>
-    </section>
-
-  </main>  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
-
-
 
 <!--     <div class="l-main__container">
       <section class="c-card">
