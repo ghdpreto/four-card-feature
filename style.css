@@ -14,29 +14,26 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  border: 1px solid;
 }
 
 html {
   width: 100vw;
-  height: 100vh;
   font-size: 62.5%; /* 1rem = 10px */
   font-family: "Poppins", sans-serif;
 }
 
 body {
-  height: 100%;
-  width: 1440px;
+  max-width: 1440px;
+  padding: 20px;
   margin: 0 auto;
-  border: 1px solid;
   display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-rows: 200px auto 80px;
   align-items: center;
   background-color: rgba(189, 195, 199, 0.3);
 }
 
 .l-header {
-  width: 100%;
-  padding: 50px 0;
   text-align: center;
 }
 
@@ -54,7 +51,7 @@ body {
 }
 
 .l-header__description {
-  width: 500px;
+  max-width: 500px;
   font-size: 1.5rem;
   line-height: 3rem;
   margin: 0 auto;
@@ -63,21 +60,38 @@ body {
 
 .l-main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  margin: 0 auto;
   gap: 40px;
+  margin: 0 auto;
 }
 
 .c-card {
-  width: 350px;
+  max-width: 350px;
+  min-width: 325px;
   height: 250px;
-  border-top: 5px solid var(--cyan);
+  margin-top: 20px;
+  border-top: 5px solid transparent;
   border-radius: 5px;
   background-color: white;
   padding: 20px;
-  /*  margin-bottom: 40px; */
   box-shadow: 0px 0px 8px 5px rgba(189, 195, 199, 0.5);
+}
+
+/* border color custom */
+.c-card.color--cyan {
+  border-top-color: var(--cyan);
+}
+
+.c-card.color--red {
+  border-top-color: var(--red);
+}
+
+.c-card.color--orange {
+  border-top-color: var(--orange);
+}
+.c-card.color--blue {
+  border-top-color: var(--blue);
 }
 
 .c-card__content {
@@ -104,10 +118,38 @@ body {
   bottom: 0px;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+.l-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--very-dark-blue);
+  font-size: 1.2rem;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+.l-footer__attribution__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--very-dark-blue);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.l-footer__atribution__icon {
+  height: 22px;
+  margin-left: 5px;
+  background-image: url("./images/github-logo-white.svg");
+}
+
+
+/* mobile */
+@media (max-width: 1160px) {
+  html {
+    font-size: 50%;
+  }
+
+  .l-main {
+    display: block;
+  }
 }
