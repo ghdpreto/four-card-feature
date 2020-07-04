@@ -1,33 +1,114 @@
-
 :root {
-    --red: hsl(0, 78%, 62%);
-    --cyan: hsl(180, 62%, 55%);
-    --orange: hsl(34, 97%, 64%);
-    --blue: hsl(212, 86%, 64%);
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
 
-    --very-dark-blue: hsl(234, 12%, 34%);
-    --grayish-blue: hsl(229, 6%, 66%);
-    --very-light-gray: hsl(0, 0%, 98%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
 
-
-
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%; /* 1rem = 10px */
-    font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 100%;
+  width: 1440px;
+  margin: 0 auto;
+  border: 1px solid;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: rgba(189, 195, 199, 0.3);
+}
 
+.l-header {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  border: 1px solid red;
+}
 
+.l-header__title {
+  font-size: 3.2rem;
+  font-weight: 300;
+  color: var(--very-dark-blue);
+}
 
+.l-header__sub-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--very-dark-blue);
+}
 
+.l-header__description {
+  width: 500px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 0 auto;
+  color: var(--grayish-blue);
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.l-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.c-card {
+  width: 350px;
+  height: 250px;
+  border-top: 5px solid var(--cyan);
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 8px 5px rgba(189, 195, 199, 0.5);
+}
+
+.c-card__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.c-card__content__title {
+  color: var(--very-dark-blue);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.c-card__content__text {
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  color: var(--grayish-blue);
+}
+
+.c-card__content__img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
