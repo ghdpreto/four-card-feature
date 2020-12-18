@@ -10,7 +10,7 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
-[See it working](https://vercel.com/ghdpreto/four-card-feature)
+[See it working](https://four-card-feature-eebvz9yy8.vercel.app/)
 
 ## The challenge
 
